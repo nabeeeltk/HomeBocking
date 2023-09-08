@@ -1,6 +1,7 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:real_estate/veiw/home/home_screen.dart';
 
 import '../controller/root_cotrpller.dart';
 
@@ -10,9 +11,7 @@ class RootPage extends StatelessWidget {
   RootPage({Key? key});
 
   final List<Widget> pages = [
-    Container(
-      child: Center(child: Text("page1", style: TextStyle(color: Colors.black))),
-    ),
+   const HomeScreenPage(),
     Container(
       child: Center(child: Text("page2", style: TextStyle(color: Colors.black))),
     ),
