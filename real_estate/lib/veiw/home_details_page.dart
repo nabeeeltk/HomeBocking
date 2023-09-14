@@ -9,6 +9,7 @@ class HomeDetailsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      
       appBar: AppBar(
         title: const Text(
           "Details",
@@ -98,7 +99,7 @@ class HomeDetailsPage extends StatelessWidget {
                 MaterialButton(
                     minWidth: 50,
                     height: 40,
-                    color:  maincolor,
+                    color: Colors.black,
                     child: const Text(
                       "₹ 150000",
                       style: TextStyle(color: Colors.white),
