@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:real_estate/veiw/splash/splash_screen.dart';
 import 'package:real_estate/widgets/root_screen.dart';
 
 void main() {
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: RootPage()
+      home:const  SplashScreen()
     );
   }
 }
