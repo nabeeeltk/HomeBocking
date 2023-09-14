@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:loading_indicator/loading_indicator.dart';
+import 'package:real_estate/veiw/auth/signup_screen.dart';
 import 'package:real_estate/widgets/root_screen.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -9,7 +10,7 @@ class SplashScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
       Future.delayed(Duration(seconds: 4), () {
-        return Get.to(RootPage());
+        return Get.to(SignUpPage());
          
     });
     return const Scaffold(
