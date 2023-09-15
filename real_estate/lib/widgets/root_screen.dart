@@ -1,7 +1,9 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:real_estate/veiw/Profile/profile_page.dart';
 import 'package:real_estate/veiw/home/home_screen.dart';
+import 'package:real_estate/veiw/settings/settings_page.dart';
 
 import '../controller/root_cotrpller.dart';
 
@@ -15,12 +17,9 @@ class RootPage extends StatelessWidget {
     Container(
       child: Center(child: Text("page2", style: TextStyle(color: Colors.black))),
     ),
-    Container(
-      child: Center(child: Text("page3", style: TextStyle(color: Colors.black))),
-    ),
-    Container(
-      child: Center(child: Text("page4", style: TextStyle(color: Colors.black))),
-    ),
+   SettingsPage(),
+   SettingsPage()
+    
   ];
 
   @override

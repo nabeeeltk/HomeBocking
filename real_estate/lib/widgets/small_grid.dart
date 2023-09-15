@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../veiw/home_details_page.dart';
+import '../veiw/home/home_details_page.dart';
 
 class SmallGrid extends StatelessWidget {
   @override
