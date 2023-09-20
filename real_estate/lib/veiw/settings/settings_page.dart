@@ -65,9 +65,25 @@ class SettingsPage extends StatelessWidget {
             trailing: Icon(Icons.help,size: 25,),
            ),
           const  Divider(),
-           const  ListTile(
-            title: Text("LogOut"),
-            trailing: Icon(Icons.logout_outlined,size: 25,),
+            ListTile(
+            onTap: (){
+              showDialog(context: context, builder:(context) {
+                return   AlertDialog(
+                  title: const  Text(" Are you Sure"),
+                  content:const  Text("Log out ?"),
+                  actions: [
+                           TextButton(onPressed: (){
+                            Get.back();
+                           }, child: const Text("Ok")),
+                           TextButton(onPressed: (){
+                            Get.back();
+                           }, child: const Text("Cancel"))
+                  ],
+                );
+              },);
+            },
+            title:const  Text("LogOut"),
+            trailing: const Icon(Icons.logout_outlined,size: 25,),
            ),
           const  Divider(),
           ],
