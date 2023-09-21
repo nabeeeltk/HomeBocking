@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:real_estate/veiw/home/home_screen.dart';
 import 'package:real_estate/veiw/settings/settings_page.dart';
+import 'package:real_estate/widgets/search_widget.dart';
 
 import '../controller/root_cotrpller.dart';
 
@@ -15,7 +16,7 @@ class RootPage extends StatelessWidget {
 
   final List<Widget> pages = [
     const HomeScreenPage(),
-    Container(),
+    const  SearchWidget(),
     const SettingsPage(),
     const SettingsPage()
   ];
